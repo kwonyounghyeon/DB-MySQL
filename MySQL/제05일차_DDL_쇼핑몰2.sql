@@ -64,7 +64,7 @@ foreign key(ba_po_num) references product_option(po_num)
 drop table if exists `order`;
 create table if not exists `order`(
 or_num int auto_increment primary key,
-or_totla_price int not null,
+or_total_price int not null,
 or_price int not null,
 or_use_point int not null,
 or_add_point int not null,
