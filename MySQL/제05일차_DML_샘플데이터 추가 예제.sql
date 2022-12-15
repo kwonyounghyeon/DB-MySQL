@@ -1,12 +1,11 @@
-UPDATE `small_jik`.`member` 
-	SET `me_id` = 'abc', `me_pw` = 'abc', `me_name` = 'ABC마트', `me_authority` = 'MEMBER', `me_point` = '0' 
-	WHERE (`me_id` = 'a_bc');
+INSERT INTO `small_jik`.`member` (`me_id`, `me_pw`, `me_name`, `me_authority`, `me_point`)
+ VALUES ('abc', 'abc', 'ABC마트', 'MEMBER', '0');
 INSERT INTO `small_jik`.`member` (`me_id`, `me_pw`, `me_name`, `me_birth`, `me_authority`, `me_point`) 
-	VALUES ('qwe', 'qwe', '홍길동', '2002-01-01', 'MEMBER', '0');
-INSERT INTO `small_jik`.`member` (`me_id`, `me_pw`, `me_name`, `me_authority`) 
-	VALUES ('admin', 'admin', '관리자', 'ADMIN');
+VALUES ('qwe', 'qwe', '홍길동', '2002-01-01', 'MEMBER', '0');
+INSERT INTO `small_jik`.`member` (`me_id`, `me_pw`, `me_name`, `me_authority`, `me_point`)
+ VALUES ('admin', 'admin', '관리자', 'ADMIN', '0');
 INSERT INTO `small_jik`.`member` (`me_id`, `me_pw`, `me_name`, `me_birth`, `me_authority`, `me_point`) 
-	VALUES ('hi', 'hi', '고길동', '2001-12-12', 'MEMBER', '0');
+VALUES ('hi', 'hi', '고길동', '2001-12-12', 'MEMBER', '0');
 
 /* 카테고리 등록(메인)
 -의류
