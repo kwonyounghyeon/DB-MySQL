@@ -40,14 +40,13 @@ insert into ticketing(ti_amount,ti_me_id,ti_ss_num,ti_total_price)
 	values(3,'abc',25,30000);
 -- 예매 좌석을 등록
 insert into ticketing_seat(ts_ti_num,ts_se_num)
-	select 3,se_num from seat where se_name = 'A1' and se_ci_num =1;
-insert into ticketing_seat(ts_ti_num,ts_se_num)
-	select 3,se_num from seat where se_name = 'B1' and se_ci_num =1;
-insert into ticketing_seat(ts_ti_num,ts_se_num)
-	select 3,se_num from seat where se_name = 'C1' and se_ci_num =1;
-insert into ticketing_seat(ts_ti_num,ts_se_num)
-	values(2,11),(2,13),(2,15);
-
+	values(3,11),(3,13),(3,15);
+-- insert into ticketing_seat(ts_ti_num,ts_se_num)
+-- 	select 3,se_num from seat where se_name = 'A1' and se_ci_num =1;
+-- insert into ticketing_seat(ts_ti_num,ts_se_num)
+-- 	select 3,se_num from seat where se_name = 'B1' and se_ci_num =1;
+-- insert into ticketing_seat(ts_ti_num,ts_se_num)
+-- 	select 3,se_num from seat where se_name = 'C1' and se_ci_num =1;
 -- 에매 가능 좌석을 수정
 update screen_schedule
 	set ss_possible_seat = ss_possible_seat-3
